@@ -1,0 +1,31 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: red;
+}
+
+header .logo {
+    height: 3rem;
+}
+
+header .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header .menu li {
+    padding: 1rem;
+    border-top: 2px solid transparent;
+}
+
+header .menu li.active {
+    border-top: 2px solid blue;
+}
+
