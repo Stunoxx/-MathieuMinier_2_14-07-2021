@@ -41,3 +41,6 @@ header .menu li.active {
     color: blue;
     }
 
+img {
+    height: 10rem;
+}
