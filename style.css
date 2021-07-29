@@ -35,6 +35,11 @@ header .menu li.active {
     color: #0065FC;
     
 }
+.contenu {
+    padding: 1rem;
+}
+
+
 .recherche {
     border-radius: 0.8rem;
     display: inline-flex;
@@ -70,18 +75,75 @@ header .menu li.active {
 
 .button-filtres i {
     color: #0065FC;
+    background-color: #bbcbe2;
     }
 
 img {
     height: 10rem;
 }
 .button-filtres {
-    
-    padding-left: 2px;
-    padding-right: 2px;
-    border-width: 0.5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    border-width: 0.1rem;
     border-radius : 1.5rem;
+    
 }
 .input-filtres {
     border: none;
+}
+.info i {
+   line-height: 3rem;
+   padding: 0 1rem;
+    color: #0065FC;
+} 
+.info {
+    display: flex;
+}
+
+.hebergements {
+    max-width: 50%;
+    flex-direction: column;
+    display: flex;
+    
+    
+}
+ .images {
+     display: flex;
+     justify-content: space-between;
+     
+ }
+
+
+.hebergement-img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 5px solid rgba(185, 181, 181, 0.89)
+    
+    
+
+}
+.stars {
+    color: #0065FC;
+}
+.les-plus-populaires {
+    justify-content: right;
+    text-align: right;
+    padding-inline: 22rem;
+    position: relative;
+    bottom: 41rem;
+    
+}
+
+.les-plus-populaires i {
+    position: absolute;
+    padding-left: 3rem;
+    top: 0.5rem;
+}
+.les-plus-populaires img {
+    border-radius: 1rem;
+    border: 5px solid rgba(185, 181, 181, 0.89)
+    
 }
