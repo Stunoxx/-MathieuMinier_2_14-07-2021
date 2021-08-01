@@ -75,7 +75,7 @@ header .menu li.active {
 
 .button-filtres i {
     color: #0065FC;
-    background-color: #bbcbe2;
+    
     }
 
 img {
@@ -137,6 +137,7 @@ img {
 }
 .stars {
     color: #0065FC;
+    
 }
 
 
@@ -232,9 +233,21 @@ img {
 }
 
 .footer-bloc {
-   text-align: center; 
+   text-align: center;
    
    
 }
+.liste-a-propos {
+    list-style: none;
+}
+.liste-nos-hebergements {
+    list-style: none;
+    
+}
+.liste-assistance {
+    list-style: none;
+    
+}
+
 
 
