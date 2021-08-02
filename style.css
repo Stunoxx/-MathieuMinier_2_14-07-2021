@@ -145,7 +145,7 @@ img {
 
 .les-plus-populaires {
     max-width: 20%;
-    margin-right: 8%;
+    margin-right: 22%;
     background-color: rgb(242, 242, 242);
     border-radius: 15px;
     padding: 0 8rem 0 8rem;
@@ -158,6 +158,7 @@ img {
 }
 
 .card-populaires {
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
     border: 0 1rem solid grey;
@@ -172,7 +173,13 @@ img {
     flex-direction: column;
 }
 
+.afficher-plus {
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+}
+
 .cntr-activites {
+    padding-top: 5rem;
     width: 70%;
     justify-content: right;
     align-items: left;
@@ -184,10 +191,9 @@ img {
 }
 
 .activites {
-    margin: 0;
+    margin: 0%;
     column-count: 4;
     display: flex;
-    margin-left: 10rem;
     margin-right: 10rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -232,22 +238,51 @@ img {
     padding: 0 1rem ;
 }
 
-.footer-bloc {
-   text-align: center;
-   
-   
+.footer-global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding-top: 6rem;
 }
 .liste-a-propos {
     list-style: none;
 }
 .liste-nos-hebergements {
     list-style: none;
-    
+    margin-right: 25rem;
+    margin-left: 10rem;
 }
 .liste-assistance {
     list-style: none;
+    margin-right: 45rem;
+    
     
 }
+.liste-1 {
+    text-decoration: none;
+    color: grey;
+    
+}
+.liste-2 {
+    text-decoration: none;
+    color: grey;
+}
+.liste-3 {
+    text-decoration: none;
+    color: grey;
+}
+.a-propos-f {
+    margin-left: 2rem;
+}
+
+.nos-h {
+    margin-left: 12rem;
+}
+.assistance {
+    margin-left: 2rem;
+}
+
 
 
 
