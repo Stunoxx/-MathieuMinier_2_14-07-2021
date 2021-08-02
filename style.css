@@ -137,6 +137,7 @@ img {
 }
 .stars {
     color: #0065FC;
+    margin-bottom: 2.5rem;
     
 }
 
@@ -172,6 +173,15 @@ img {
 .card-populaires-text {
     flex-direction: column;
 }
+.populaire-texte {
+    padding-left: 1rem;
+}
+.stars-populaires {
+    color: #0065FC;
+    margin-left: 1rem;
+}
+    
+
 
 .afficher-plus {
     padding-top: 1.5rem;
@@ -271,16 +281,17 @@ img {
 .liste-3 {
     text-decoration: none;
     color: grey;
+    margin-right: 12rem;
 }
 .a-propos-f {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .nos-h {
-    margin-left: 12rem;
+    margin-left: 12.5rem;
 }
 .assistance {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 
