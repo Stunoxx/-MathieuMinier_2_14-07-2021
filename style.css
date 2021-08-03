@@ -17,6 +17,8 @@ header {
 
 header .logo {
     height: 3rem;
+    padding: 1rem 0;
+    
 }
 
 header .menu {
@@ -25,18 +27,33 @@ header .menu {
     margin: 0;
 }
 
-header .menu li {
-    padding: 1rem;
+
+header .menu li a {
+    text-decoration: none;
+    color: grey;
+    display: block;
+    padding: 2rem;
     border-top: 2px solid transparent;
 }
 
-header .menu li.active {
+header .menu li.active a, header .menu li:hover a {
     border-top: 2px solid #0065FC;
     color: #0065FC;
     
 }
+header .menu li.menu-inscription a {
+    font-weight: bold;
+    color: #0065FC;
+
+}
 .contenu {
     padding: 1rem;
+}
+.contenu h3 {
+    margin: 0;
+}
+.contenu-subtitle {
+    margin: 0.5rem 0 1rem 0;
 }
 
 
@@ -64,6 +81,8 @@ header .menu li.active {
 
 
 
+
+
 .buttonr {
     background-color: #0065FC;
     color: white;
@@ -72,24 +91,48 @@ header .menu li.active {
     padding: 0 1rem;
     font-weight: bold;
 }
-
-.button-filtres i {
-    color: #0065FC;
-    
-    }
-
-img {
-    height: 10rem;
-}
 .button-filtres {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-    border-width: 0.1rem;
-    border-radius : 1.5rem;
-    
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
 }
+
+.button-filtres-titre {
+    font-weight: bold;
+    margin-right: 2rem;
+}
+.button-filtre  {
+    border-radius: 1rem;
+    padding: 0;
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.button-filtre .button-filtre-icon {
+    height: 2.2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: #DEEBFF;
+    margin:-1px;
+
+}
+
+.button-filtre .button-filtre-icon i {
+    color: #0065FC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button-filtre .button-filtre-text {
+    line-height: 2rem;
+    padding: 0 1rem ;
+}
+
+
 .input-filtres {
     border: none;
     margin: 0.1rem;
@@ -110,7 +153,7 @@ img {
 }
 
 .hebergements {
-    max-width: 50%;
+    width: 60%;
     flex-direction: column;
     display: flex;
     padding: 0 3rem 0 3rem;
@@ -125,7 +168,7 @@ img {
 
 
 .hebergement-img {
-    background-color: rgb(242, 242, 242);
+    background-color: white;
     display: flex;
     flex-direction: column;
     border: 0 1rem solid grey;
@@ -135,21 +178,22 @@ img {
     
 
 }
-.stars {
-    color: #0065FC;
+.stars i {
+    color: #F2F2F2;
     margin-bottom: 2.5rem;
     
+}
+.stars i.active {
+    color: #0065FC;
 }
 
 
 
-
 .les-plus-populaires {
-    max-width: 20%;
-    margin-right: 22%;
+    width: 30%;
     background-color: rgb(242, 242, 242);
     border-radius: 15px;
-    padding: 0 8rem 0 8rem;
+    padding: 1rem;
 }
 
 .les-plus-populaires span {
@@ -177,8 +221,11 @@ img {
     padding-left: 1rem;
 }
 .stars-populaires {
-    color: #0065FC;
+    color: #f2f2f2;
     margin-left: 1rem;
+}
+.stars-populaires .active {
+    color: #0065FC;
 }
     
 
