@@ -162,6 +162,7 @@ header .menu li.menu-inscription a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #F2F2F2;
 }
 
 .hebergements {
@@ -170,6 +171,7 @@ header .menu li.menu-inscription a {
     display: flex;
     padding: 0 3rem 0 3rem;
     background-color: #F2F2F2;
+    
     
     
     
@@ -187,13 +189,13 @@ header .menu li.menu-inscription a {
 
 
 .hebergement-img {
-    background-color: white;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     border-radius: 2rem 1rem 1rem 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    
+    border: 2px solid white;
     
     
 
@@ -288,11 +290,13 @@ header .menu li.menu-inscription a {
     width: 17rem;
     height: 10rem;
     border-radius: 1rem;
+    object-fit: cover;
     
 }
 .les-plus-populaires img {
     width: 10rem;
     height: 10rem;
+    object-fit: cover;
 }
 
 
@@ -303,7 +307,8 @@ header .menu li.menu-inscription a {
     border-radius: 2rem;
     padding: 0 1rem ;
     padding-right: 7rem; 
-    padding-top: 4rem;   
+    padding-top: 4rem; 
+    object-fit: cover;  
 }
 .activites-img2 img {
     width: 22rem;
@@ -312,6 +317,7 @@ header .menu li.menu-inscription a {
     padding: 0 1rem ;
     padding-top: 4rem;
     padding-right: 6rem;
+    object-fit: cover;
 }
 .activites-frioul img {
     border-radius: 2rem;
@@ -321,6 +327,7 @@ header .menu li.menu-inscription a {
     padding-top: 0.8rem;
     padding-right: 6rem;
     padding-top: 6rem;
+    object-fit: cover;
     
 }
 .activites-col img {
@@ -330,6 +337,7 @@ header .menu li.menu-inscription a {
     padding: 0 1rem ;
     padding-right: 6rem;
     padding-top: 3.8rem;
+    object-fit: cover;
 }
 
 .footer-global {
