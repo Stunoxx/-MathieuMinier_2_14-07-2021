@@ -402,6 +402,124 @@ header .menu li.menu-inscription a {
     padding-right: 10rem;
 }
 
+@media (max-width:1440px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #section-hebergements {
+        flex-direction: column;
+        
+    }
+    
+    .hebergements {
+        flex-direction: column;
+        padding: 0;
+
+    }
+    .hebergements img {
+        width: 28rem;
+        height: 12rem;
+        border-radius: 1rem;
+        
+    }
+
+    .hebergement-img {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        
+    }
+    
+    
+    .les-plus-populaires {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        
+    }
+    .populaire-texte {
+        padding-left: 1rem;
+        margin: 0;
+        padding-top: 0.5rem;
+    }
+    
+    .images {
+        flex-direction: column;
+       
+    }
+    .card-populaires {
+        flex-direction: column;
+    }
+    .card-populaires-text {
+        flex-direction: column;
+    }
+    .card-populaires {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        border: 0 1rem solid grey;
+        border-radius: 15px 15px 15px 15px;
+    
+    }
+    
+    .cntr-activites {
+        flex-direction: column;
+        padding: 0;
+    }
+    .cntr-activites img {
+        width: 28rem;
+        height: 12rem;
+        border-radius: 1rem;
+    }
+    
+    .activites {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .activite img {
+        padding: 0;
+        
+    }
+    
+    .activites-img2 img {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .activites-frioul img {
+        flex-direction: column;
+    }
+    .activites-frioul img {
+        padding: 0;
+    }
+    .activites-col img {
+        padding: 0;
+    }
+    
+    
+    
+    .footer-global {
+        flex-direction: column;
+    }
+    .nos-h {
+        margin: 1.5rem;
+    }
+    .liste-nos-hebergements {
+        margin: 0;
+        padding-top: 1rem;
+    }
+}
+    
+
+
+
+
+
 
 
 
