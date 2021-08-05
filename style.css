@@ -419,7 +419,7 @@ header .menu li.menu-inscription a {
 
     }
     .hebergements img {
-        width: 28rem;
+        width: 26rem;
         height: 12rem;
         border-radius: 1rem;
         
@@ -465,14 +465,18 @@ header .menu li.menu-inscription a {
         border-radius: 15px 15px 15px 15px;
     
     }
-    
+    #activite-m {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0;
+    }
     .cntr-activites {
         flex-direction: column;
         padding: 0;
     }
     .cntr-activites img {
-        width: 28rem;
-        height: 12rem;
+        width: 26rem;
+        height: 14rem;
         border-radius: 1rem;
     }
     
@@ -499,6 +503,10 @@ header .menu li.menu-inscription a {
     }
     .activites-col img {
         padding: 0;
+    }
+    .afficher-plus {
+        margin: 0;
+        
     }
     
     
