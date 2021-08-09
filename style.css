@@ -156,6 +156,7 @@ header .menu li.menu-inscription a {
 
 .hebergements-à-Marseille {
     font-weight: bold;
+    margin-left: 1rem;
 }
 
 #section-hebergements {
@@ -166,15 +167,12 @@ header .menu li.menu-inscription a {
 }
 
 .hebergements {
-    width: 50%;
+    width: 55%;
     flex-direction: column;
     display: flex;
     padding: 0 3rem 0 3rem;
     background-color: #F2F2F2;
-    
-    
-    
-    
+    padding-top: 4rem;
 }
 
 
@@ -219,6 +217,7 @@ header .menu li.menu-inscription a {
     background-color: rgb(242, 242, 242);
     border-radius: 15px;
     padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 .les-plus-populaires span {
@@ -270,7 +269,9 @@ header .menu li.menu-inscription a {
     width: 70%;
     justify-content: right;
     align-items: left;
+
 }
+
 
 #activite-m {
     margin: 2rem;
@@ -287,7 +288,7 @@ header .menu li.menu-inscription a {
 }
 
 .hebergement-img img {
-    width: 17rem;
+    width: 18rem;
     height: 10rem;
     border-radius: 1rem;
     object-fit: cover;
@@ -304,7 +305,7 @@ header .menu li.menu-inscription a {
 .activite img {
     width: 22rem;
     height: 27rem;
-    border-radius: 2rem;
+    
     padding: 0 1rem ;
     padding-right: 7rem; 
     padding-top: 4rem; 
@@ -313,14 +314,15 @@ header .menu li.menu-inscription a {
 .activites-img2 img {
     width: 22rem;
     height: 10rem;
-    border-radius: 1rem 1rem 1rem 1rem;
+
     padding: 0 1rem ;
     padding-top: 4rem;
     padding-right: 6rem;
     object-fit: cover;
 }
+
 .activites-frioul img {
-    border-radius: 2rem;
+    
     width: 22rem;
     height: 26rem;
     padding: 0 1rem ;
@@ -329,6 +331,8 @@ header .menu li.menu-inscription a {
     padding-top: 6rem;
     object-fit: cover;
     
+    
+    
 }
 .activites-col img {
     border-radius: 1rem;
@@ -336,7 +340,9 @@ header .menu li.menu-inscription a {
     height: 10rem;
     padding: 0 1rem ;
     padding-right: 6rem;
-    padding-top: 3.8rem;
+    padding-top: 4.5rem;
+    
+  
     object-fit: cover;
 }
 
@@ -347,17 +353,22 @@ header .menu li.menu-inscription a {
     text-align: left;
     padding-top: 6rem;
 }
+.titre-img {
+    margin-left: 2rem;
+}
 .liste-a-propos {
     list-style: none;
+    
 }
 .liste-nos-hebergements {
     list-style: none;
-    margin-right: 25rem;
-    margin-left: 10rem;
+    margin-right: 16rem;
+    margin-left: 10.5rem;
 }
 .liste-assistance {
     list-style: none;
-    margin-right: 45rem;
+    margin-right: 22rem;
+    
     
     
 }
@@ -365,6 +376,7 @@ header .menu li.menu-inscription a {
     text-decoration: none;
     color: grey;
     padding-bottom: 2rem;
+    line-height: 2rem;
     
 }
 
@@ -372,24 +384,26 @@ header .menu li.menu-inscription a {
 .liste-2 {
     text-decoration: none;
     color: grey;
+    line-height: 2rem;
     
     
 }
 .liste-3 {
     text-decoration: none;
     color: grey;
+    line-height: 2rem;
     
 }
 
 
 
 .a-propos-f {
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     
 }
 
 .nos-h {
-    margin-left: 12.5rem;
+    margin-left: 13rem;
     
    
     
@@ -407,7 +421,10 @@ header .menu li.menu-inscription a {
         flex-direction: column;
         height: auto;
     }
-    
+    .button-filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     #section-hebergements {
         flex-direction: column;
         
@@ -485,7 +502,7 @@ header .menu li.menu-inscription a {
         margin: 0;
         padding: 0;
     }
-    .activite img {
+    .activite {
         padding: 0;
         
     }
@@ -521,6 +538,7 @@ header .menu li.menu-inscription a {
         margin: 0;
         padding-top: 1rem;
     }
+    
 }
     
 
