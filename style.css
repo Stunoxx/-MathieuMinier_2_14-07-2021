@@ -41,11 +41,18 @@ header .menu li.active a, header .menu li:hover a {
     color: #0065FC;
     
 }
+
 header .menu li.menu-inscription a {
     font-weight: bold;
     color: #0065FC;
 
 }
+
+.responsive-header {
+    display: none;
+}
+
+
 .contenu {
     padding: 1rem;
 }
@@ -82,7 +89,9 @@ header .menu li.menu-inscription a {
 
 
 
-
+.button-mobile-icon {
+    display: none;
+}
 .buttonr {
     background-color: #0065FC;
     color: white;
@@ -417,26 +426,130 @@ header .menu li.menu-inscription a {
 }
 
 @media (max-width:1440px) {
-    .menu {
+    header {
+        display: none;
+    }
+    
+    header.responsive-header {
+        display: inline;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+       
+        
+    }
+    header.responsive-header li a {
+        text-decoration: none;
+        color: grey;
+        display: block;
+        padding: 2rem;
+        border-top: 2px solid transparent;
+        padding: 1;
+    }
+    header.menu li.menu-inscription a {
+        font-weight: bold;
+        color: #0065FC;
+    }
+    header.responsive-header li.active a, header.responsive-header li:hover a {
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+    
+    
+
+     header .menu li.menu-inscription a.menu{
         flex-direction: column;
         height: auto;
+    }
+    .menu {
+        padding: 0;
+    }
+    
+    .menu-inscription {
+        display: inline-block;
+       padding: 0;
+       padding-bottom: 0rem;
+       padding-left: 1rem;
+       
+    }
+    
+    
+    .contenu {
+        padding-left: 1rem;
+    }
+    .contenu-subtitle {
+        padding-top: 0.5rem;
+    }
+    .recherche {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .buttonr {
+        display: none;
+    }
+    .button-mobile-icon {
+        display: flex;
+        
+    }
+    .recherche .button-mobile-icon i {
+        color: white;
+        height: 2.2rem;
+        width: 2rem;
+        background-color: #0065FC;
+        margin:-1px;
+        padding: 0;
+        border-radius: 35%;
     }
     .button-filtres {
         flex-direction: column;
         align-items: flex-start;
+        padding-top: 1rem;
     }
+     .button-filtre {
+      padding-top: 1.5rem;
+    }
+   
+
+    .button-filtre .button-filtre-icon {
+        height: 2.2rem;
+        width: 2rem;
+        border-radius: 50%;
+        position: relative;
+        background-color: #DEEBFF;
+        margin:-1px;
+    
+    }
+    .button-filtre .button-filtre-icon i {
+        color: #0065FC;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .button-filtre .button-filtre-text {
+        line-height: 2rem;
+        padding: 0 1rem ;
+    }
+
+
     #section-hebergements {
-        flex-direction: column;
+        flex-direction: column-reverse;
         
     }
     
     .hebergements {
         flex-direction: column;
+        
         padding: 0;
+        padding-top: 3rem;
 
     }
+    .hebergements-à-Marseille {
+        margin: 1;
+    }
     .hebergements img {
-        width: 26rem;
+        width: 22rem;
         height: 12rem;
         border-radius: 1rem;
         
@@ -456,6 +569,7 @@ header .menu li.menu-inscription a {
         padding: 0;
         width: 100%;
         height: auto;
+        padding-left: 1rem;
         
     }
     .populaire-texte {
@@ -482,19 +596,44 @@ header .menu li.menu-inscription a {
         border-radius: 15px 15px 15px 15px;
     
     }
+    .stars-populaires {
+        padding-top: 2.5rem;
+    }
+    .afficher-plus {
+        padding: 1rem;
+        padding-top: 0;
+    }
+    
+    
+    
+    .activite {
+        padding-left: 1rem;
+    }
+    .activite-colo {
+        padding: 0;
+    }
+
     #activite-m {
-        padding-top: 2rem;
+        padding-top: 5rem;
         padding-bottom: 2rem;
+        padding-left: 1rem;
         margin: 0;
     }
+    .activites-col {
+        padding-left: 0;
+    }
+    
     .cntr-activites {
         flex-direction: column;
         padding: 0;
     }
     .cntr-activites img {
-        width: 26rem;
-        height: 14rem;
-        border-radius: 1rem;
+        padding-left: 0;
+        padding: 0;
+        width: 22rem;
+        height: 12rem;
+        border-radius: 1rem
+        
     }
     
     .activites {
@@ -510,14 +649,14 @@ header .menu li.menu-inscription a {
     .activites-img2 img {
         flex-direction: column;
         padding: 0;
+        padding-left: 0;
     }
 
     .activites-frioul img {
         flex-direction: column;
+        padding-left: 0;
     }
-    .activites-frioul img {
-        padding: 0;
-    }
+    
     .activites-col img {
         padding: 0;
     }
