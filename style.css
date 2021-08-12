@@ -47,10 +47,10 @@ header .menu li.menu-inscription a {
     color: #0065FC;
 
 }
-
-.responsive-header {
+.menu-inscription-mobile {
     display: none;
 }
+
 
 
 .contenu {
@@ -100,9 +100,13 @@ header .menu li.menu-inscription a {
     padding: 0 1rem;
     font-weight: bold;
 }
+.button-ctnr {
+    display: flex;
+    flex-wrap: wrap;
+}
 .button-filtres {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     padding: 1rem 0;
 }
 
@@ -282,6 +286,8 @@ header .menu li.menu-inscription a {
 }
 .card-populaires-text {
     flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 .populaire-texte {
     padding-left: 1rem;
@@ -291,7 +297,7 @@ header .menu li.menu-inscription a {
 .stars-populaires {
     color: #f2f2f2;
     margin-left: 1rem;
-    padding-top: 5rem;
+    
 }
 .stars-populaires .active {
     color: #0065FC;
@@ -402,10 +408,10 @@ header .menu li.menu-inscription a {
 
 @media (max-width:1440px) {
     header {
-        display: none;
+        display: flex;
     }
     
-    header.responsive-header {
+    header {
         display: inline;
         flex-direction: column;
         list-style: none;
@@ -413,7 +419,8 @@ header .menu li.menu-inscription a {
        
         
     }
-    header.responsive-header li a {
+    header.menu-inscription-mobile li a {
+        display: inline-block;
         text-decoration: none;
         color: grey;
         display: block;
@@ -421,12 +428,11 @@ header .menu li.menu-inscription a {
         border-top: 2px solid transparent;
         padding: 1;
     }
-    header.responsive-header li.menu-inscription a {
-        font-weight: bold;
-        color: #0065FC;
+    header li.menu-inscription-mobile a {
+        
         display: table;
     }
-    header.responsive-header li.menu-hebergement a, header.responsive-header li:hover a {
+    header li.menu a, header li:hover a {
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
@@ -434,21 +440,29 @@ header .menu li.menu-inscription a {
     
     
 
-     header .menu li.menu-inscription a.menu{
+     header .menu li.menu-inscription-mobile a.menu{
         flex-direction: column;
         height: auto;
     }
     .menu {
         padding: 0;
     }
-    
-    .menu-inscription {
-        
+    .menu-inscription-mobile {
         display: inline-block;
-       padding: 0;
-       padding-bottom: 0rem;
-       padding-left: 4rem;
+        padding: 0;
+        padding-bottom: 0rem;
+        text-decoration: none;
+        color: grey;
+        padding: 2rem;
+        border-top: 2px solid transparent;
+        padding: 1;
+        font-weight: bold;
+        color: #0065FC;
        
+       
+    }
+    .menu-inscription {
+        display: none;
     }
     .menu-hebergement {
         padding-bottom: 1rem;
@@ -484,12 +498,11 @@ header .menu li.menu-inscription a {
         border-radius: 35%;
     }
     .button-filtres {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 1rem;
+       display: block; 
     }
      .button-filtre {
       margin-top: 1.5rem;
+      margin-right: 0.5rem;
       
     }
    
@@ -528,6 +541,7 @@ header .menu li.menu-inscription a {
         padding-left: 1rem;
         margin: 0;
         padding-top: 0.5rem;
+        font-size: 0.9rem;
     }
     
     .bloc-hebergement {
@@ -552,9 +566,7 @@ header .menu li.menu-inscription a {
         padding-left: 1rem;
         padding-top: 3rem;
     }
-    .stars-populaires {
-        padding-top: 2.5rem;
-    }
+    
     
     #section-hebergements {
         flex-direction: column-reverse;
