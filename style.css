@@ -201,7 +201,7 @@ header .menu li.menu-inscription a {
 
 
 
- .bloc-images {
+ .bloc-hebergement {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
@@ -420,14 +420,16 @@ header .menu li.menu-inscription a {
         border-top: 2px solid transparent;
         padding: 1;
     }
-    header.menu li.menu-inscription a {
+    header.responsive-header li.menu-inscription a {
         font-weight: bold;
         color: #0065FC;
+        display: table;
     }
-    header.responsive-header li.active a, header.responsive-header li:hover a {
+    header.responsive-header li.menu-hebergement a, header.responsive-header li:hover a {
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
+    
     
     
 
@@ -440,11 +442,16 @@ header .menu li.menu-inscription a {
     }
     
     .menu-inscription {
+        
         display: inline-block;
        padding: 0;
        padding-bottom: 0rem;
-       padding-left: 1rem;
+       padding-left: 4rem;
        
+    }
+    .menu-hebergement {
+        padding-bottom: 1rem;
+        padding: 0;
     }
     
     
@@ -481,7 +488,8 @@ header .menu li.menu-inscription a {
         padding-top: 1rem;
     }
      .button-filtre {
-      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+      
     }
    
 
@@ -506,53 +514,22 @@ header .menu li.menu-inscription a {
         padding: 0 1rem ;
     }
 
-
-    #section-hebergements {
-        flex-direction: column-reverse;
-        padding: 0;
-        
-    }
-    
-    .hebergements {
-        flex-direction: column;
-        padding: 0;
-        padding-top: 3rem;
-
-    }
-    .hebergements-à-Marseille {
-        margin: 1;
-    }
-    .hebergements img {
-        width: 19rem;
-        height: 12rem;
-        border-radius: 1rem;
-        
-    }
-
-    .hebergement-img {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        
-    }
-    
-    
     .les-plus-populaires {
         flex-direction: column;
         padding: 0;
         width: 100%;
         height: auto;
         
-        
     }
+  
+    
     .populaire-texte {
         padding-left: 1rem;
         margin: 0;
         padding-top: 0.5rem;
     }
     
-    .bloc-images {
+    .bloc-hebergement {
         flex-direction: column;
        
     }
@@ -570,9 +547,49 @@ header .menu li.menu-inscription a {
         border-radius: 15px 15px 15px 15px;
     
     }
+    .titre-populaires {
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
     .stars-populaires {
         padding-top: 2.5rem;
     }
+    
+    #section-hebergements {
+        flex-direction: column-reverse;
+        padding: 0;
+        background-color: #F2F2F2;
+        }
+    
+    .hebergements {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 3rem;
+       
+    }
+    .hebergements-a-marseille {
+        margin: 1;
+        padding-left: 1rem;
+    }
+    .hebergements img {
+        width: 19rem;
+        height: 8rem;
+        border-radius: 1rem 1rem 0 0;
+        
+    }
+
+    .hebergement-img {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background-color: WHITE;
+        margin: 0;
+        
+    }
+    
+    
+    
     
     
     .afficher-plus {
@@ -628,7 +645,7 @@ header .menu li.menu-inscription a {
         flex-direction: column;
         }
         .footer-col {
-            width: 30%;
+            width: 100%;
         
         }
         .footer-col h3 {
