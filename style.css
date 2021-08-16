@@ -426,7 +426,7 @@ header .menu li.menu-inscription a {
         display: block;
         padding: 2rem;
         border-top: 2px solid transparent;
-        padding: 1;
+        padding: 1rem;
     }
     header li.menu-inscription-mobile a {
         
@@ -448,14 +448,15 @@ header .menu li.menu-inscription a {
         padding: 0;
     }
     .menu-inscription-mobile {
-        display: inline-block;
+        display: table-caption;
+        justify-content: space-between;
+        margin-left: 4rem;
         padding: 0;
         padding-bottom: 0rem;
         text-decoration: none;
         color: grey;
         padding: 2rem;
         border-top: 2px solid transparent;
-        padding: 1;
         font-weight: bold;
         color: #0065FC;
        
@@ -487,7 +488,9 @@ header .menu li.menu-inscription a {
     .button-mobile-icon {
         display: flex;
         
-    }
+   }
+        
+    
     .recherche .button-mobile-icon i {
         color: white;
         height: 2.2rem;
@@ -558,7 +561,7 @@ header .menu li.menu-inscription a {
         margin-top: 2.5rem;
         display: flex;
         flex-direction: row;
-        border: 0 1rem solid grey;
+        border:  0rem  solid grey;
         border-radius: 15px 15px 15px 15px;
     
     }
@@ -585,7 +588,7 @@ header .menu li.menu-inscription a {
        
     }
     .hebergements-a-marseille {
-        margin: 1;
+        margin: 1rem;
         padding-left: 1rem;
     }
     .hebergements img {
