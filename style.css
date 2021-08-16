@@ -428,11 +428,9 @@ header .menu li.menu-inscription a {
         border-top: 2px solid transparent;
         padding: 1rem;
     }
-    header li.menu-inscription-mobile a {
-        
-        display: table;
-    }
+    
     header li.menu a, header li:hover a {
+        
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
@@ -443,6 +441,7 @@ header .menu li.menu-inscription a {
      header .menu li.menu-inscription-mobile a.menu{
         flex-direction: column;
         height: auto;
+        
     }
     .menu {
         padding: 0;
