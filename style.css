@@ -154,6 +154,7 @@ header .menu li.menu-inscription a {
 
 .info {
     display: flex;
+    padding-top: 3rem;
 }
 .info .info-icon {
     width: 1rem;
@@ -197,7 +198,7 @@ header .menu li.menu-inscription a {
 }
 
 .hebergements {
-    width: 65%;
+    width: 100%;
     padding: 1rem;
     background-color: #F2F2F2;
     border-radius: 1rem;
@@ -406,9 +407,10 @@ header .menu li.menu-inscription a {
 
 
 
-@media (max-width:1440px) {
+@media (max-width: 1025px) {
     header {
         display: flex;
+        justify-content: center;
     }
     
     header {
@@ -416,45 +418,47 @@ header .menu li.menu-inscription a {
         flex-direction: column;
         list-style: none;
         justify-content: space-between;
-       
-        
-    }
-    header.menu-inscription-mobile li a {
+       }
+
+       header .menu li a {
+        padding: 3rem;
+       }
+    
+    
+       header.menu-inscription-mobile li a {
         display: inline-block;
         text-decoration: none;
         color: grey;
         display: block;
-        padding: 2rem;
+        padding: 4rem;
         border-top: 2px solid transparent;
         padding: 1rem;
     }
     
-    header li.menu a, header li:hover a {
+    header .menu li.active a, header .menu li:hover a {
         
-        border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
     
     
-    
-
-     header .menu li.menu-inscription-mobile a.menu{
+    header .menu li.menu-inscription-mobile a.menu{
         flex-direction: column;
         height: auto;
         
     }
     .menu {
         padding: 0;
+        justify-content: center;
+        
     }
     .menu-inscription-mobile {
-        display: table-caption;
-        justify-content: space-between;
-        margin-left: 4rem;
-        padding: 0;
-        padding-bottom: 0rem;
+        display: flex;
+        justify-content: flex-end;
+        
+        padding-right: 1rem;
         text-decoration: none;
         color: grey;
-        padding: 2rem;
+        
         border-top: 2px solid transparent;
         font-weight: bold;
         color: #0065FC;
@@ -479,6 +483,7 @@ header .menu li.menu-inscription a {
     .recherche {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        width: 100%;
     }
     
     .buttonr {
@@ -489,15 +494,24 @@ header .menu li.menu-inscription a {
         
    }
         
-    
+    .recherche input {
+        width: 100%;
+    }
     .recherche .button-mobile-icon i {
         color: white;
-        height: 2.2rem;
-        width: 2rem;
         background-color: #0065FC;
-        margin:-1px;
-        padding: 0;
-        border-radius: 35%;
+        font-weight: bold;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        
+    }
+    
+    .button-ctnr{
+        flex-wrap: wrap;
+        display: block;
     }
     .button-filtres {
        display: block; 
@@ -530,6 +544,10 @@ header .menu li.menu-inscription a {
         padding: 0 1rem ;
     }
 
+    
+
+    
+
     .les-plus-populaires {
         flex-direction: column;
         box-sizing: border-box;
@@ -546,10 +564,7 @@ header .menu li.menu-inscription a {
         font-size: 0.9rem;
     }
     
-    .bloc-hebergement {
-        flex-direction: column;
-       
-    }
+    
     .card-populaires {
         flex-direction: column;
     }
@@ -568,14 +583,21 @@ header .menu li.menu-inscription a {
         padding-left: 1rem;
         padding-top: 3rem;
     }
-    
-    
     #section-hebergements {
         flex-direction: column-reverse;
         padding: 0;
         background-color: white;
         }
     
+        @media (max-width: 1023px) {
+    
+        
+    
+        .bloc-hebergement {
+            flex-direction: column;
+        }
+
+
     .hebergements {
         flex-direction: column;
         padding: 0;
@@ -594,6 +616,7 @@ header .menu li.menu-inscription a {
         width: 100%;
         height: 8rem;
         border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
         
     }
 
@@ -618,6 +641,7 @@ header .menu li.menu-inscription a {
         padding-top: 0;
         margin: 0;
     }
+    
     #activite-m {
         padding-top: 3rem;
         padding-bottom: 2rem;
@@ -686,6 +710,6 @@ header .menu li.menu-inscription a {
             color: black;
             text-decoration: none;
         }
-    
+    }
     
 }
