@@ -24,8 +24,10 @@
 
   <body>
     <header>
-      <img class="logo" src="./img/reservia.png" alt="Logo" />
-      <a class="menu-inscription-mobile" href="#">S'inscrire</a>
+      <div class="header-top">
+        <img class="logo" src="./img/reservia.png" alt="Logo" />
+        <a class="menu-inscription-mobile" href="#">S'inscrire</a>
+      </div>
       <ul class="menu">
         <li class="active"><a href="#">Hébergements</a></li>
         <!-- Ajout balise <a> -->
@@ -40,9 +42,8 @@
       <p class="contenu-subtitle">En plein centre ville ou en pleine nature</p>
 
       <div class="recherche">
-        <i class="fas fa-map-marker-alt"></i>
-        <!--
-            --><input type="text" class="name" value="Marseille, France" />
+        <span class="recherche-icon"><i class="fas fa-map-marker-alt"></i></span>
+        <input type="text" class="name" value="Marseille, France" />
         <button class="buttonr">Rechercher</button>
         <span class="button-mobile-icon"><i class="fas fa-search"></i></span>
       </div>
