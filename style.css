@@ -106,20 +106,30 @@ header .menu li.menu-inscription a {
     height: 2rem;
     padding: 0 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
 .button-ctnr {
     display: flex;
     flex-wrap: wrap;
+    
 }
+
+
+
 .button-filtres {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem 0;
+    
 }
+
+
+
 
 .button-filtres-titre {
     font-weight: bold;
     margin-right: 2rem;
+    padding-top: 0.55rem;
 }
 .button-filtre  {
     border-radius: 1rem;
@@ -128,6 +138,24 @@ header .menu li.menu-inscription a {
     background-color: white;
     display: flex;
     margin-right: 1rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    
+    
+}
+
+.button-filtre ::after {
+     content: "";
+     width: 400px;
+     height: 400px;
+     transition: all 0.2s;
+     
+}
+
+
+.button-filtre:hover {
+    transform: translate(0,-4px);
+    
 }
 
 .button-filtre .button-filtre-icon {
@@ -218,8 +246,8 @@ header .menu li.menu-inscription a {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
-
-
+     
+     
 }
 
 
@@ -231,8 +259,25 @@ header .menu li.menu-inscription a {
     width: 30%;
     margin-bottom: 2rem;
     box-sizing: border-box;
-
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    
 }
+
+.hebergement-img:hover {
+   transform: translate(0,-4px);
+   border: 5px solid #f3f1ef;
+}
+.hebergement-img::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    transition: all 0.2s;
+    
+}
+
 .hebergement-img img {
     width: 100%;
     height: 10rem;
@@ -242,6 +287,7 @@ header .menu li.menu-inscription a {
 }
 .hebergement-img .hebergement-contenu {
     padding: 1rem;
+    color: black;
 }
 .stars {
     padding-top: 0.7rem;
@@ -284,8 +330,22 @@ header .menu li.menu-inscription a {
     border: 6px solid white;
     border-radius: 1.5rem;
     background-color: white;
-
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    
 }
+.card-populaires ::after {
+    content: "";
+    transition: all 5s;
+    
+}
+
+.card-populaires:hover {
+   transform: translate(0,-4px);
+}
+
+
 .card-populaires img {
     border-radius: 1rem 0 0 1rem;
 }
@@ -298,6 +358,7 @@ header .menu li.menu-inscription a {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+    color: black;
 }
 .populaire-texte {
     padding-left: 1rem;
@@ -348,8 +409,25 @@ header .menu li.menu-inscription a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    
 }
+.activites-col ::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    transition: all 5s;
+    
+}
+
+
+.activites-col:hover {
+   transform: translate(0,-4px);
+}
+
+
 .activite {
     border-radius: 1rem;
     overflow: hidden;
@@ -382,6 +460,7 @@ header .menu li.menu-inscription a {
     left: 0;
     right: 0;
     background-color: white;
+    color: black;
 }
 
 
@@ -411,6 +490,9 @@ header .menu li.menu-inscription a {
     color: black;
     text-decoration: none;
 
+}
+.footer-global a:hover {
+    text-decoration: underline black;
 }
 
 
